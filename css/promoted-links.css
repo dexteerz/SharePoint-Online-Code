@@ -1,57 +1,53 @@
-<style type="text/css">
+/*  tile row height */
+div.ms-promlink-body {
+  height: 100px;
+}
 
-  /*  tile row height */
-  div.ms-promlink-body {
-    height: 100px;
-  }
+/*  tile dimensions, including inter-tile margin */
+div.ms-tileview-tile-root {
+  width: 110px !important;
+  height: 110px !important;
+}
 
-  /*  tile dimensions, including inter-tile margin */
-  div.ms-tileview-tile-root {
-    width: 110px !important;
-    height: 110px !important;
-  }
+/*  tile and title( + description) overlay dimensions */
+div.ms-tileview-tile-content, div.ms-tileview-tile-detailsBox {
+  width: 100px !important;
+  height: 100px !important;
+}
 
-  /*  tile and title( + description) overlay dimensions */
-  div.ms-tileview-tile-content, div.ms-tileview-tile-detailsBox {
-    width: 100px !important;
-    height: 100px !important;
-  }
+/*  tile background image dimensions */
+div.ms-tileview-tile-content > a > img {
+  width: 100% !important;
+  height: 100% !important;
+}
 
-  /*  tile background image dimensions */
-  div.ms-tileview-tile-content > a > img {
-    width: 100% !important;
-    height: 100% !important;
-  }
+/*  title and description text  */
+ul.ms-tileview-tile-detailsListMedium {
+  height: 100px;
+  padding: 4px 7px 7px;
+  font-size: 11px;
+  line-height: 14px;
+}
 
-  /*  title and description text  */
-  ul.ms-tileview-tile-detailsListMedium {
-    height: 100px;
-    padding: 4px 7px 7px;
-    font-size: 11px;
-    line-height: 14px;
-  }
+/*  description text class  */
+li.ms-tileview-tile-descriptionMedium {
+  padding-top: 10px;
+  font-size: 11px;
+}
 
-  /*  description text class  */
-  li.ms-tileview-tile-descriptionMedium {
-    padding-top: 10px;
-    font-size: 11px;
-  }
-
-  /*  title text when description not shown  */
-  div.ms-tileview-tile-titleTextMediumCollapsed {
-    background-color: rgba(0, 0, 0, 0.6);
-    width: 86px;
-    height: 29px;
-    position: absolute;
-    top: -33px;
-    left: 0px;
-    padding: 4px 7px 0px;
-    font-size: 11px;
-    line-height: 13px;
-  }
+/*  title text when description not shown  */
+div.ms-tileview-tile-titleTextMediumCollapsed {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 86px;
+  height: 29px;
+  position: absolute;
+  top: -33px;
+  left: 0px;
+  padding: 4px 7px 0px;
+  font-size: 11px;
+  line-height: 13px;
+}
 .ms-tileview-tile-content img {
-    width:100px!important;
-    height:100px!important;
+  width:100px!important;
+  height:100px!important;
 } 
-
-</style>
