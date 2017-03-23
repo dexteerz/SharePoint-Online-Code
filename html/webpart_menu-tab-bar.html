@@ -50,38 +50,51 @@ ul.menu{ float:left; font-family:Verdana, Geneva, sans-serif; font-size:12px; bo
 
 </style>
 
+
 <script type="text/javascript">
+/*
+################# JS INTRODUCED IN CODE, USE IN OPENDIALOG BUTTON
+*/
 function openDialog() { 
 	var options = { 
-		url: "/Lists/Solicitao%20Para%20Pagamento/NewForm.aspx", 
+		// URL = domain.sharepoint.com/ListName/Newform.aspx or EditForm.aspx or DispForm.aspx
+		url: "URL/NewForm.aspx", 
+		// WIDTH OR HEIGTH WITHOUT PX OR %
 		width: 600, 
 		height: 800, 
-		title: "Nova Solicitação", 
+		title: "NAME FORM VIEW", 
 	}; 
 SP.UI.ModalDialog.showModalDialog(options); 
 } 
 </script>
-<!-- Esse é o 1 nivel ou o nivel principal -->
-<!-- Menu com submenus, até 3 niveis -->
+
+
+
+<!-- This is the 1 level or the main level -->
+<!-- Menu with submenus, up to 3 levels -->
 <ul class="menu">
 	<li> 
-		<a onclick="javascript:openDialog()">(+) Novo</a></li>
+		<!-- COMMAND OPENDIALOG FUNCTION JS -->
+		<a onclick="javascript:openDialog()">NAME LI</a>
+	</li>
 	<li> 
-		<a href="/URL">MENU1</a>
-	<!-- Esse é o 2 nivel o submenu -->
-	<ul class="submenu-1">
-		<li>
-			<a href="/URL">SUBMENU1</a>
-			
-			<!-- Esse é o 3 nivel ou sub do submenu -->
-			<ul class="submenu-2">
-				<li>
-				<a href="/URL">SUBMENU1.1</a></li>
-				<li>
-				<a href="/URL">SUBMENU1.2</a></li>
-			</ul>
-		</li>		
-	</ul>
-		 
+		<!-- This is the 1 level submenu -->
+		<a href="/URL">SUNMENU1</a>
+		<ul class="submenu-1">
+			<li>
+				<!-- This is the 2 level submenu -->
+				<a href="/URL">SUBMENU2</a>
+				<ul class="submenu-2">
+					<li>
+						<!-- This is the 3 level submenu -->
+						<a href="/URL">SUBMENU3</a>
+						<ul class="submenu-3">
+							<li>
+							<a href="/URL">SUBMENU3</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>		
+		</ul>	 
 	</li>
 </ul>
