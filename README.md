@@ -1,5 +1,4 @@
-<snippet>
-  <content><![CDATA[
+
 # ${1:Project Name}
 SharePoint Online is a cloud-based service that helps organizations share and collaborate with colleagues, partners, and customers. With SharePoint Online, you can access internal sites, documents, and other information from anywhere—at the office, at home, or from a mobile device.
 
@@ -11,6 +10,4 @@ We’ve divided the planning process into five manageable steps. With each step,
     [ ] https://products.office.com/
     [ ] https://products.office.com/pt-br/sharepoint/sharepoint-online-collaboration-software
     [ ] No installation is required, just licensing as previously written links.
-]]></content>
-  <tabTrigger>readme</tabTrigger>
-</snippet>
+]]
