@@ -20,6 +20,7 @@
         Type.registerNamespace('ITSP.SP.AttachmentField');
     }
 
+    /* Attachment icon link function */
     ITSP.SP.AttachmentField.ListViewTemplate = function(ctx) {
         var schemaName = ctx.CurrentFieldSchema.Name;
         var fieldRender = new AttachmentFieldRenderer(schemaName);
@@ -29,7 +30,9 @@
         if (ctx.CurrentItem.Attachments != undefined) {
             var hasAttachments = ctx.CurrentItem.Attachments;
             if (hasAttachments) {
+                /* Display text by hovering over the icon */
                 var spanElementId = "attachmentField_ListItem_Span_" + ctx.CurrentItem.ID;
+                fieldRenderedHtml = "<div title='Attachment(s)' id='" + spanElementId + "' style='cursor:pointer;' class='link-set' onclick='javascript:ITSP.SP.AttachmentField.ShowAttachmentInformation(ctx," + ctx.CurrentItem.ID + ", \"" + spanElementId + "\");'>" + attachmentRenderedHtml + "</div>";
             }
 
         }
@@ -37,10 +40,39 @@
         return fieldRenderedHtml;
     }
 
+    /* The annexes preview panel */
     ITSP.SP.AttachmentField.ShowAttachmentInformation = function(ctx, currentItemId, spanElementId) {
         this.currentItemId = currentItemId;
         this.listName = ctx.ListTitle;
         this.spanElementId = spanElementId;''
+        //alert(this.listName);
+
+        this.context = new SP.ClientContext.get_current();
+        this.currentSite = this.context.get_site();
+        this.currentWeb = this.context.get_web();
+        this.currentList = this.context.get_web().get_lists().getByTitle(this.listName);
+        this.currentListItem = this.context.get_web().get_lists().getByTitle(this.listName).getItemById(currentItemId);
+        this.currentListItemAttachments = this.currentListItem.get_attachmentFiles();
+        this.delegateQueue = [];
+        this.asyncMessage = null;
+        this.ready = false;
+        this.attachmentCallout = null;
+
+        this.context.load(this.currentSite);
+        this.context.load(this.currentWeb, 'Title', 'Description');
+        this.context.load(this.currentList);
+        this.context.load(this.currentListItem, 'Title', 'DisplayName');
+        this.context.load(this.currentListItemAttachments);
+
+        this.webLoadSuccess = function(sender, args) {
+            this.ready = true;
+            this.asyncMessage = "success";
+            //alert("Loading Attachments Dashboard");
+
+            var attachmentCount = this.currentListItemAttachments.get_count();
+            var attachmentContentHtml = "";
+            if (attachmentCount > 0) { 
+                /* executa função de contagem de anexo */
                 for (i = 0; i < attachmentCount; i++) {
                     var attachmentFile = this.currentListItemAttachments.getItemAtIndex(i);
                     var attachmentFilePath = attachmentFile.get_serverRelativeUrl();
@@ -48,7 +80,9 @@
                     attachmentContentHtml = attachmentContentHtml + "<li><a href='" + attachmentFilePath + "' target='_new'>" + attachmentFile.get_fileName() + "</a></li>";
                 }
             }
+            /* Displays text with number of attachments */
             var link = document.getElementById(this.spanElementId);
+            var calloutContent = "<p>It has " + attachmentCount + " Attachments.</p> <p><ul>" + attachmentContentHtml + "</ul></p>";
             var calloutId=this.currentItemId + "attachmentCallout";
             var calloutTitle = "Item: " + this.currentListItem.get_displayName();
 
@@ -94,6 +128,8 @@
 
     (function() {
         var attachmentFieldContext = {};
+        /* Load the Sharepoint template:
+        View, DisplayForm, EditForm e NewForm */
         attachmentFieldContext.Templates = {};
         attachmentFieldContext.Templates.Fields = {
             "Attachments": {
