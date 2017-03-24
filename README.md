@@ -9,6 +9,6 @@ Before you dive into building and configuring your organization’s SharePoint O
 
 We’ve divided the planning process into five manageable steps. With each step, you’ll find helpful resources to guide your decisions and get you better acquainted with SharePoint Online.
 
-    - [ ] [O365!](https://products.office.com/)
-    - [ ] [SharePoint Online!](https://products.office.com/pt-br/sharepoint/sharepoint-online-collaboration-software/)
-    - [ ] No installation is required, just licensing as previously written links
+[ ] [O365!](https://products.office.com/)
+[ ] [SharePoint Online!](https://products.office.com/pt-br/sharepoint/sharepoint-online-collaboration-software/)
+[ ] No installation is required, just licensing as previously written links
