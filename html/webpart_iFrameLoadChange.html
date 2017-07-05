@@ -1,0 +1,23 @@
+<html>
+  <head>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        // MUDAR OS LINKS ENTRE ASPAS E SEPARA-LOS COM VIRGULA
+        var locations = ["LINK1", "LINK2", "LINK3"];
+        var len = locations.length;
+        var iframe = $('#iframeload');
+        var i = 0;
+        setInterval(function () {
+          iframe.attr('src', locations[++i % len]);
+          // TEMPO DE TRANSIÇÃO EM MILISEGUNDOS
+        }, 6000);
+      });
+    </script>
+  </head>
+
+  <body>
+    <!-- no SRC será a tela inicial -->
+    <iframe width="800" height="600" id="iframeload" frameborder="0" allowFullScreen="true" src="LINK1"></iframe>
+  </body>
+</html>
