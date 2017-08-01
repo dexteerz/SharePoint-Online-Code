@@ -1,4 +1,3 @@
-
 <script type="text/javascript"  language="javascript">
 /* TOGETHER THE ANNEX OF A LIST OF COMPULSORY SHAREPOINT */
 /* ~~ TECNO CENTER: bTEIXEIRA ~~ */ 
