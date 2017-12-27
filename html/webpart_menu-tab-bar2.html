@@ -1,0 +1,441 @@
+<meta http-equiv="Content-Language" content="pt-br"/>
+<style type="text/css">
+
+.ms-noList ul, .ms-noList ol, .ms-noList {
+display: none;
+
+.style2 {
+   font-size: medium;
+   color: #FFFFFF;
+   font-family: "Century Gothic";
+   background-color: #339933;
+}
+
+
+
+/*Configurações Padrões*/
+ul.menu, .menu li, .menu a {
+   margin:0;
+   padding:0;
+   list-style:none;
+   text-decoration:none;
+   
+}
+ul.menu ul {
+   position:absolute;
+   display:none;
+   box-shadow:3px 3px 2px #333;
+   
+}
+
+/* Configurações nivel 1*/
+ul.menu {
+   float:left;
+   font-family:Verdana, Geneva, sans-serif;
+   font-size:12px;
+   border-radius:3px;
+   padding:0 3px;
+   width:99.3%;
+   
+}
+.menu li {
+   float:left;
+   width:auto;
+   position:relative;
+}
+.menu li a {
+   display:block;
+   padding:0 15px;
+   line-height:50px;
+   height:50px;
+   float:left;
+   transition:all 0.1s ease-in;
+}
+
+/* Configurações nivel 2*/
+.menu li:hover > ul.submenu-1 {
+   display:block;
+   top:50px; left:0;
+   padding:5px;
+   width:370px;
+   border-radius:0 0 5px 5px;
+}
+.menu ul.submenu-1 a {
+   width:330px;
+   padding:0 20px;
+   border-radius:5px;
+}
+
+/* Configurações nivel 2*/
+.menu li:hover > ul.submenu-2 {
+   display:block;
+   top:0; left:295px;
+   padding:5px; width:300px;
+   border-radius: 0 5px 5px 5px;
+}
+.menu ul.submenu-2 a {
+   width:260px; padding:0 20px;
+   border-radius:5px;
+}
+
+/* Configurações nivel 3*/
+.menu li:hover > ul.submenu-3 {
+   display:block; top:0;
+   left:255px; padding:5px;
+   width:200px;  border-radius: 0 5px 5px 5px;
+}
+.menu ul.submenu-3 a {
+   width:160px; padding:0 20px;
+   border-radius:5px;
+}
+
+
+/*Configurações de cores*/
+
+/*nivel 1*/
+.menu {
+   background:#f1f1f1;
+}
+.menu a {
+   color:#000;
+}
+.menu li:hover > a {
+   background:#444;
+   color:#fff;
+}
+
+/*nivel 2*/
+.submenu-1 {
+   background:#444;
+}
+.submenu-1 a {
+   color:#fff;
+}
+.submenu-1 li:hover > a {
+   background:#2f2f2f;
+}
+
+/*nivel 3*/
+.submenu-2 {
+   background:#2f2f2f;
+}
+.submenu-2 a {
+   color:#fff;
+}
+.submenu-2 li:hover > a {
+   background:#001000;
+}
+
+/*nivel 3*/
+.submenu-3 {
+   background:#001000;
+}
+.submenu-3 a {
+   color:#fff;
+}
+.submenu-3 li:hover > a {
+   background:#000;
+}
+
+
+/* OTHERS */
+ms-dlgFrameContainer > ms-core-overlay > #contentBox {
+   margin-left: 20px;
+}
+
+</style>
+
+
+<!-- Esse é o 1 nivel ou o nivel principal --><!-- Menu com submenus, até 3 niveis --> 
+      <ul class="menu"> 
+         <li> 
+            <a href="#">SAP</a> 
+            <ul class="submenu-1"> 
+               <li> 
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD80200B74D996B791F3F48B225CE495722F152">Nota fiscal inexistente</a></li> 
+               <li> 
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD803000A7CD88EC7D76A449941CC0FADE8E88F">Produto com flag (Expedição)</a></li>
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD80400D644F310E0C9C042AA752685F1E8F3D5">Usuário SAP bloqueado</a></li>
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD80500C21D68952D675846AE9C2A9F1493F8B3">Integração de preço (carga de preço)</a></li>
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD8060026E1AA2330D84C46B819C1A11DB6C47E">Integração de produto (carga de produto)</a></li> 
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD8070003B60CE076442245BC05F19F4E67A930">Cliente com erro</a></li> 
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD8080008FD996FB1BBDE4F8E23D571C3BF9512">Liberação de objetos</a></li> 
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD809004D9B3E1828E54349A97A10095C4DD1A8">Liberação de transação</a></li> 
+            </ul>
+         </li> 
+         <li> 
+            <a href="#">TELEFONE</a> 
+            <ul class="submenu-1"> 
+               <li> 
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD80A0043E5FED5308C414E8D38DB1664817E95">Celular - Aparelho - Novo</a></li>
+               <li> 
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD80B00567F7AA8E02AD844AC30089433E4111D">Celular - Aparelho - Troca</a></li>
+               <li> 
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD80C001538706892CAAB49A3EAA6370688EDBA">Celular - Linha - Adicionar Crédito</a></li>
+               <li> 
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD80D00E2D8023026B720408D2449F847FC0670">Celular - Linha - Desabilitar Linha</a></li>
+               <li> 
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD80E0048AE325B6111924195E18614137E4427">Celular - Linha - Habilitar Plano Internet</a></li>
+               <li> 
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD80F00C30CFF28A8FAF64486026A91A7CC6918">Celular - Linha - Liberar Ligações Externas CE</a></li>
+               <li> 
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD81000FC31BE218973474AAE0F58519D4572C7">Celular - Linha - Liberar Ligações Externas DDD</a></li>
+               <li> 
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD81100AC3E3879BB01D64D95B4651A5DCD0186">Celular - Linha - Mureg</a></li>
+               <li> 
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD81200D4D4395E4DE9CC44AE7C8475183C532F">Celular - Linha - Nova Linha</a></li>
+               <li> 
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD81E0093D5E8FD59E6D948A197891359806D25">Fixo - Aparelho - Com problema</a></li>
+               <li> 
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD81F00465839318C681E4086F65F22080E91BE">Fixo - Aparelho - Novo</a></li>
+               <li> 
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD81300E8825E70E4D91C499081E0F1414364B9">Fixo - Linha - Liberar Ligações Externas CE</a></li>
+               <li> 
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD8140005BF2F32BB9C9C43A174420F735BFAD3">Fixo - Linha - Liberar Ligações Externas DDD</a></li>
+               <li> 
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD81500ED6FBBCED7EAE047854C3126CBA487D8">Fixo - Linha - Novo</a></li>
+               <li> 
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD81600C913B67BBE80A448A353CF54F2031297">Fixo - Linha - Troca de usuário</a></li>
+            </ul>
+         </li> 
+         <li> 
+            <a href="#">LINX</a> 
+            <ul class="submenu-1"> 
+               <li> 
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD81700590677468530304FBAA6A5F2852220E2">Pedido. s/Ordem de Venda (Integrar pedido LINX)</a></li> 
+               <li> 
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD8180067CF25EB19A520469D5DEB0D6FA22F8B">Integrar Vale crédito (Devolução)</a></li>
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD81900D9E7F73957907445973B2DB1E1D5591D">Criação de atendente de vendas</a></li>
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD81A000F705770C85BC248A7D2999621E4FDF1">Integração de estoque de produtos</a></li>
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD81B002B5EB869E76282429AF5F42A2A738AAD">Criação de usuário VCS</a></li> 
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD81C00A1FBF60F6898DF46A7F201A403F8E05F">Gerar crédito manual</a></li> 
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD81D002A31F1425A7E8F458F42765DA90E7C7D">Fita detalhe</a></li> 
+            </ul>
+         </li> 
+         <li> 
+            <a href="#">SUPORTE/INFRA</a> 
+            <ul class="submenu-1"> 
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD82000534097B9F68C4B43B9CF9C491933C84B"> Suporte-Infra - Antivírus - Instalação-Configuração </a></li>
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD82100F9150835C4764942B528759E752DDAE5"> Suporte-Infra - Antivírus - Não sincroniza com a central </a></li>
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD822001E094EE6A53ACA4BA943F083D7B7518D"> Suporte-Infra - Aplicativos - Apresentando Erros </a></li>
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD8230018FDF4D387D52F4E83BF515E3D73733E"> Suporte-Infra - Aplicativos - Instalação-Atualização-Configuração </a></li>
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD82400209DF850C0F04A4FB401DDACE732844D"> Suporte-Infra - Central Telefônica - Apresentando Problemas </a></li>
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD825006075A1766446994C860C28E1B210FA55"> Suporte-Infra - Central Telefônica - Ativar ramal </a></li>
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD8260059C0C27512FB0D4FB63F0B323E6FCFC9"> Suporte-Infra - Cabeamento Estruturado - Crimpar Ponto </a></li>
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD82700B53E9BEE44AE284E96182B9F2232DF53"> Suporte-Infra - Cabeamento Estruturado - Idenfiticação </a></li>
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD8280043F4F6FEB81BB54883D2375513209B04"> Suporte-Infra - Cabeamento Estruturado - Organização do Local </a></li>
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD82900E6FA5B4D4DCF914C90B023270477705C"> Suporte-Infra - Computador - Configuração - Data e Hora Errada </a></li>
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD82A00B57472ED5AA0D347A9CB2C0C3D111F14"> Suporte-Infra - Computador - Configuração - Não Acessa a Internet </a></li>
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD82B0060C22CA534129B4F9ADD1A9F3C164504"> Suporte-Infra - Computador - Configuração - Não Conecta na Rede </a></li>
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD82C00752E6BCD4D8E084293F260D78CD1A930"> Suporte-Infra - Computador - Configuração - Não Conecta na VPN </a></li>
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD82D005EABC7A261439F4490AD5445EE20B1F7"> Suporte-Infra - Computador - Configuração - Perfil </a></li>
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD82E00BAE4921687733542B35ABFE7703F3058"> Suporte-Infra - Computador - Configuração - Rede </a></li>
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD82F006F736E4461B9E44B81586B470B5DAF49"> Suporte-Infra - Computador - Configuração - S.O. lento </a></li>
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD83000F3187F5313E9414AAA578D23BB95866C"> Suporte-Infra - Computador - Configuração - Travando constantemente </a></li>
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD83100FD2E2DE94E0B9543BFAF9E70CCE2D38D"> Suporte-Infra - Computador - Configuração - Windows </a></li>
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD8320068D034A5CBDBC54BB68E6F84CCE75D0F"> Suporte-Infra - Computador - Hardware - Manutenção Preventiva </a></li>
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD833009BEA043ED8C67B429DAEFFEF8323004F"> Suporte-Infra - Computador - Hardware - Upgrade </a></li>
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD83400C07EDC2E00C3C240BB9C1F533D7FD0E6"> Suporte-Infra - Computador - Hardware - Não Liga </a></li>
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD835000BBB1FA0D5FBA94798267A6776EA1D85"> Suporte-Infra - Computador - Hardware - Não Reconhece HD </a></li>
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD836008CD9B1A9AF34F8408AA03F05F29971CA"> Suporte-Infra - Computador - Hardware - Não Reconhece Memória </a></li>
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD8370053F8CBDBB759AE46A72089A6047332E5"> Suporte-Infra - Computador - Novo </a></li>
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD83800AC7A6E16C0BAF84A9FEBC06922E150D0"> Suporte-Infra - Computador - Troca de localização </a></li>
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD839007A7B185F9065F841828DF865834F30D7"> Suporte-Infra - Controle de Acesso - Novo acesso </a></li>
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD83A009B6C7C94CBE608458B280F6E00991741"> Suporte-Infra - Controle de Acesso - Retirar acesso </a></li>
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD83B001A2D66C2A83C1D42B313F9FD1F138E6F"> Suporte-Infra - Controle de Acesso - Alterar horário </a></li>
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD83C005CCCD3BA9C960C4B8F8C8ABA56D4528A"> Suporte-Infra - Controle de Acesso - Acesso Temporário </a></li>
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD83D00D69B3D6A3F9FCD47B2B7E854EA3E9C79"> Suporte-Infra - DVR - Configuração - Instalação </a></li>
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD83E007E07D49B3AEFE7449E55D7A87E5B7AD3"> Suporte-Infra - DVR - Configuração - Não apresenta imagens </a></li>
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD83F0067A74184434CA6489D161D2917AA3F3E"> Suporte-Infra - DVR - Configuração - Usuário bloqueado </a></li>
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD8400016BEFD4711BB2E458257578A3CC55604"> Suporte-Infra - Impressora - A4 - Atolamento de Papel </a></li>
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD84100CDC11EFF3D78464191F9396687691624"> Suporte-Infra - Impressora - A4 - Instalação-Configuração </a></li>
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD84200153ED865532C9C4CBF7D48F13B952DBD"> Suporte-Infra - Impressora - A4 - Manchando Papel </a></li>
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD84300FAB9BD12C0304848A13E28323F5C46C2"> Suporte-Infra - Impressora - A4 - Manutenção Preventiva </a></li>
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD8440066F8C0C0A289A94696C0C3F96F3227C7"> Suporte-Infra - Impressora - A4 - Não funciona corretamente </a></li>
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD8450087C8BEC4EB48A94193D67CFDCA07D03F"> Suporte-Infra - Impressora - A4 - Troca de Toner </a></li>
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD84600F65AEF60F7281B4B837DBD2E71017C8B"> Suporte-Infra - Impressora - Etiquetas - Atolamento de Papel </a></li>
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD847006FF3C332A2F60C4F9164F8EC1CEB6B05"> Suporte-Infra - Impressora - Etiquetas - Instalação-Configuração </a></li>
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD84800BC2C4338AD6E7146A1DDABF9625262D7"> Suporte-Infra - Impressora - Etiquetas - Manutenção Preventiva </a></li>
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD84900B068855BECD9124A87E909AB66771FD3"> Suporte-Infra - Impressora - Etiquetas - Não funciona corretamente </a></li>
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD84A007713E209BD3ECE449DF9167864B3A0AA"> Suporte-Infra - Impressora - Etiquetas - Troca de Ribbon </a></li>
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD84B00F678E241CEEF1842AA93E7B80BB02E08"> Suporte-Infra - Impressora - Pedidos - Atolamento de Papel </a></li>
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD84C00A1DB578439812D4DB99CF025CB0B9769"> Suporte-Infra - Impressora - Pedidos - Instalação-Configuração </a></li>
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD84D008A6F0396BCCDF242A72A3BFA463E88D8"> Suporte-Infra - Impressora - Pedidos - Manutenção Preventiva </a></li>
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD84E008C4533CC5A14C040B9F1DB8F49F3F0BA"> Suporte-Infra - Impressora - Pedidos - Não funciona corretamente </a></li>
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD84F00168103F5C45150498ABD4E197D7F868A"> Suporte-Infra - Impressora - Fiscal - Atolamento de Papel </a></li>
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD847006FF3C332A2F60C4F9164F8EC1CEB6B05"> Suporte-Infra - Impressora - Fiscal - Instalação-Configuração </a></li>
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD84D008A6F0396BCCDF242A72A3BFA463E88D8"> Suporte-Infra - Impressora - Fiscal - Manutenção Preventiva </a></li>
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD84E008C4533CC5A14C040B9F1DB8F49F3F0BA"> Suporte-Infra - Impressora - Fiscal - Não funciona corretamente </a></li>
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD8530081D12A50E8A7B942B49DA3F87248A97F"> Suporte-Infra - Link - Fibra Wirelink - Offline </a></li>
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD8540040EE56C47178824985BE949804A7BD53"> Suporte-Infra - Link - Fibra Wirelink - Perdendo Pacote </a></li>
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD85500DBFB68C91E1F4643AE55A28937377CFA"> Suporte-Infra - Link - Internet Texnet - Offline </a></li>
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD8560060EF51A0861A1E4F896CD443B109AD09"> Suporte-Infra - Link - Internet Texnet - Perdendo Pacote </a></li>
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD857005F0ED351694895488BC16C841CD3476C"> Suporte-Infra - Monitor - Configuração, Monitor - Imagem Tremula </a></li>
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD858007FBBFBED44F98646AC0ACCC74DD37D1C"> Suporte-Infra - Monitor - Não Apresenta Imagem </a></li>
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD85900B219749E60182C4099F53C2B92E5CBCB"> Suporte-Infra - Monitor - Não Liga, Monitor - Novo </a></li>
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD85A00FFF16387BDD1D340B5DAC08DB1854525"> Suporte-Infra - Nobreak - Baterias com problemas </a></li>
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD85B00C3AE98BDD961824F9845EF60190A8C45"> Suporte-Infra - Nobreak - Instalação-Configuração </a></li>
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD85C0004E5B5AEA7B9C14F86A1A5BB57F41077"> Suporte-Infra - Nobreak - Não Funciona Corretamente </a></li>
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD85D005678DFD442713240BE184C46B347B215"> Suporte-Infra - Nobreak - Não Liga </a></li>
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD85E009546DD5D58734F46A92DAF6E3B428A88"> Suporte-Infra - Nobreak - Não Transmite Corrente Elétrica </a></li>
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD85F004ECCE5D739055C468917FE95879F7298"> Suporte-Infra - Novo equipamento </a></li>
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD86000819309D55EB5EF4388A50F371BB357C8"> Suporte-Infra - Office 365 - Criar E-mail </a></li>
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD86100EE497BB995287A48B7C86BC8B10B16B5"> Suporte-Infra - Office 365 - Corrigir Assinatura </a></li>
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD862000E0B089353BA0B4DB1E97DFADCFCAFC8"> Suporte-Infra - Office 365 - Troca de senha </a></li>
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD86300E2E86D7423FC9444856FF70739B2B3D4"> Suporte-Infra - Office 365 - Outros </a></li>
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD86400955DF93E7EE9754CA871B13FB37181CE"> Suporte-Infra - Pasta de Rede - Acesso </a></li>
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD86500115F933F32BE1B45BEB82EF75E271181"> Suporte-Infra - Pasta de Rede - Criar nova pasta </a></li>
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD86600558B89E02912DD47A3AA1DF858A76F5D"> Suporte-Infra - Periféricos - Caixa de Som - Apresentando problemas </a></li>
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD86700649D9ECA6CCE4443B113D934CBE75AE5"> Suporte-Infra - Periféricos - Caixa de Som - Instalação-Configuração </a></li>
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD868005212E8E074E6A8419F650102FA48734D"> Suporte-Infra - Periféricos - Caixa de Som - Novo </a></li>
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD869005C3BE84CA2436C48816F370892C94F6B"> Suporte-Infra - Periféricos - Mouse - Apresentando problemas </a></li>
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD86A003E23CE9A7A0322429FCE46F2A62F1020"> Suporte-Infra - Periféricos - Mouse - Instalação-Configuração </a></li>
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD86B009325D81490B9FE4B8AE34E91EA675A42"> Suporte-Infra - Periféricos - Mouse - Novo </a></li>
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD86C00BABB4B0CE9FD2A4397B8D2B3C55469F9"> Suporte-Infra - Periféricos - Pinpad - Apresentando problemas </a></li>
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD86D00E93D270AA0BE2A4AAC3315553E4E21C3"> Suporte-Infra - Periféricos - Pinpad - Instalação-Configuração </a></li>
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD86E0098C9838EA4FABB4C9F0F88B32BE098AB"> Suporte-Infra - Periféricos - Pinpad - Novo </a></li>
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD86F0013B7EAD1528D0C4F9964C5D664BA8EB9"> Suporte-Infra - Periféricos - Scanner - Apresentando problemas </a></li>
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD870003ED2D49B2A7E0846B035B91068827F24"> Suporte-Infra - Periféricos - Scanner - Instalação-Configuração </a></li>
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD871003D756F1C397444418115FB427A4A41C1"> Suporte-Infra - Periféricos - Scanner - Novo </a></li>
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD87200961FC3E684C72344B14006EE86398BE2"> Suporte-Infra - Periféricos - Teclado - Apresentando problemas </a></li>
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD87300EE41BB0E4614E44E991DC68CE8FE6B3D"> Suporte-Infra - Periféricos - Teclado - Instalação-Configuração </a></li>
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD87400BE743AA8F92AC64682ABA5E2DD6FB201"> Suporte-Infra - Periféricos - Teclado - Novo </a></li>
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD87500E0775353419BB74782C77DE42E8CA7F4"> Suporte-Infra - Relógio de Ponto - Configuração - Rede </a></li>
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD87600A574794907C13D479D1FB27F0E5EF24E"> Suporte-Infra - Relógio de Ponto - Configuração - Banco de Dados </a></li>
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD87700493CA93432AF5A4D950616086D2B7790"> Suporte-Infra - Relógio de Ponto - Instalação-Configuração </a></li>
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD8780086D01E8D37137C4391FC6ED2B36C3A4C"> Suporte-Infra - Relógio de Ponto - Não Liga </a></li>
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD8790025D67F392AD2F24DB9E3BB6695769C4D"> Suporte-Infra - Switch - Configuração - Port Secutiry </a></li>
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD87A00C3501B4F9192EC4F8A5536C73B5E0D06"> Suporte-Infra - Switch - Configuração - Porta Bloqueada </a></li>
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD87B0020532E5977BE5E438A171689A185C848"> Suporte-Infra - Switch - Configuração - Vlan </a></li>
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD87C009977E1AD24AF9C4D97FAD09B86DE891B"> Suporte-Infra - Switch - Instalação </a></li>
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD87D00FF389D0E6EE105418CD77B18A66D235F"> Suporte-Infra - Switch - Não liga </a></li>
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD87E008D2575F944726347916170EB8C86741A"> Suporte-Infra - TCP - Instalação-Configuração </a></li>
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD87F008FA2886E3972E64F95F7E46B924E3D9A"> Suporte-Infra - TCP - Não Lê Preços </a></li>
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD880000BA52C23651036449F1D917DD61F66A6"> Suporte-Infra - TCP - Não liga </a></li>
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD88100876309492086074D9B634C41FCA0C1D3"> Suporte-Infra - Voucher - Criar voucher </a></li>
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD88200344A0DB9C7E16E4186C946241AAE30B8"> Suporte-Infra - Websites - Acesso a novo site </a></li>
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD883007B7E35DDEBA2A247A112D3B22770F64E"> Suporte-Infra - Websites - Site bloqueado </a></li>
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD8840057CEB4BD718EE545B100B7261C3A6F91"> Suporte-Infra - Websites - Não carrega corretamente </a></li>
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD885004FD79FF8F281484BB3C0826D4D2F4F24"> Suporte-Infra - Windows - Alterar Senha </a></li>
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD8860087B026D5AA8AC244B388AF19CC284F3A"> Suporte-Infra - Windows - Bloqueio de Senha </a></li>
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD887000BC65496A89C45429A809BC83CCF787D"> Suporte-Infra - Windows - Criar Usuário </a></li>
+               <li>
+                  <a href="/TI/Lists/Solicitaes%20TI/NewForm.aspx?&amp;ContentTypeId=0x0100418340ABD161364F9097692B34D5BDD888005F70FA5D2C448B47BEE2D27FABB56CBE"> Suporte-Infra - Windows - Identificação de Rede </a></li>
+            </ul>
+         </li>
+      </ul>
