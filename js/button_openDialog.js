@@ -2,6 +2,7 @@
 //
 /* ~~ TECNO CENTER: bTEIXEIRA ~~ */
 //
+
 function openDialog() { 
 
 	var options = { 
@@ -14,4 +15,4 @@ SP.UI.ModalDialog.showModalDialog(options);
 } 
 </script>
 
-<input type="button" value="***NOME DO BOTÃO***" onclick="javascript:openDialog()"/>
+<input type="button" value="***NOME DO BOTï¿½O***" onclick="javascript:openDialog()"/>
